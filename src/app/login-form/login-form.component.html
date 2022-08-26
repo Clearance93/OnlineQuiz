@@ -1,0 +1,31 @@
+
+
+            <!-- Dashboard Content Begin -->
+            <main class="form-signin">
+                <form>
+                  <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+              
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="username" placeholder="Username" name="username" [(ngModel)]="user.username">
+                    <label for="floatingInput">Username</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" [(ngModel)]="user.password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+              
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                  </div>
+                  <a  href="javascript:void(0);"><button class="w-100 btn btn-lg btn-dark" type="submit" (click)="onClick()">Next</button></a>
+                  <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+
+                  <p>
+                      username = user <br />
+                      password = user <br />
+                  </p>
+                </form>
+              </main>
+            <!-- Dashboard Content End -->

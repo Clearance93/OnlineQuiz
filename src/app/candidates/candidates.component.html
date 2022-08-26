@@ -1,0 +1,23 @@
+<h2>Candidates List</h2>
+
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th>No:</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Post Applied</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let candi of candidateList; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{candi.id}}</td>
+            <td>{{candi.name}}</td>
+            <td>{{candi.email}}</td>
+            <td>{{candi.post}}</td>
+        </tr>
+    </tbody>
+    <a routerLink='/new-candidate' class="btn btn-secondary">Add a candidate</a>
+</table>

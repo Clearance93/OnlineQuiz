@@ -1,0 +1,33 @@
+
+<div class="px-4 py-5 my-5 text-center">
+  <div class="col-lg-6 mx-auto">
+     <!-- Dashboard Content Begin -->
+     <main class="form-signin">
+        <form>
+          <h1 class="h3 mb-3 fw-normal">Details of candidates</h1>
+      
+          <div class="form-floating">
+            <input type="text" class="form-control" id="name" placeholder="name" name="name" [(ngModel)]="candi.name">
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingPassword" placeholder="email" name="email" [(ngModel)]="candi.email">
+            <label for="floatingPassword">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="post" placeholder="post" name="post" [(ngModel)]="candi.post">
+            <label for="post">Post Applied</label>
+          </div>
+        </form>
+      </main>
+      <br />
+    <!-- Dashboard Content End -->
+
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3" (click)="addCandidate()">Add Candidate</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4" (click)="resetAll()">reset</button>
+    </div>
+  </div>
+</div>
+
+           

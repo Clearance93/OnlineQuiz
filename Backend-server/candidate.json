@@ -1,0 +1,16 @@
+{
+  "candidates": [
+    {
+      "id": 20211,
+      "name": "Example",
+      "email": "example@yahoo.com",
+      "post": "Full stack web development"
+    },
+    {
+      "id": 20212,
+      "name": "Clearance",
+      "email": "clearance@gmail.com",
+      "post": "Full Stack"
+    }
+  ]
+}
